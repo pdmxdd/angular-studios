@@ -1,8 +1,4 @@
 <h2>Country</h2>
 <ul>
-  <li>Soviet Union</li>
-  <li>United States</li>
-  <li>United States</li>
-  <li>Soviet Union</li>
-  <li>United States</li>
+  <li *ngFor="let country of countries">{{ country }}<button (click)="removeCountry(country);">x</button></li>
 </ul>

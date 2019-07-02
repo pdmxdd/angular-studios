@@ -1,8 +1,9 @@
 <h2>Astronauts</h2>
 <ul>
-  <li>Yuri Gagarin</li>
-  <li>Alan Shepard</li>
-  <li>Virgil Grissom</li>
-  <li>Gherman Titov</li>
-  <li>John Glenn</li>
+  <li *ngFor="let astronaut of astronauts">{{ astronaut }}<button (click)="removeAstronaut(astronaut);">x</button></li>
 </ul>
+<label>name:
+  <input class="text-box" #astronautName/>
+</label>
+<br />
+<button class="button-delete" (click)="addAstronaut(astronautName.value); astronautName.value=''">Add</button>

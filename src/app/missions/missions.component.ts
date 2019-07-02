@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MissionsComponent implements OnInit {
 
+  missions = [
+    "Vostok 1",
+    "Freedom 7",
+    "Liberty Bell 7",
+    "Vostok 2",
+    "Friendship 7"
+  ]
+
   constructor() { }
 
   ngOnInit() {
